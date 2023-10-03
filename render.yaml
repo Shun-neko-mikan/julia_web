@@ -14,7 +14,7 @@ services:
     branch: main
     healthCheckPath: /
     buildCommand: "./build.sh"
-    startCommand: "gunicorn satori.wsgi --log-file -"
+    startCommand: "gunicorn satori.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
