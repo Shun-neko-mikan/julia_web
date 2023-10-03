@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: mysite
+    name: julia
     env: python
     region: singapore
     plan: free
