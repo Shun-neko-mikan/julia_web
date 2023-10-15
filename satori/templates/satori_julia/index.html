@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Django Render</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class = "title">
+      <h1>Julia Set</h1>
+    </div>
+    <div class="main">
+      <div class="input_form">
+        <div class="input_text">
+          <label for="min_x">min_x</label>
+          <!-- 必須 -->
+          <input type="text" id="min_x" placeholder="example: -1.5" required/>
+        </div>
+        <div class="input_text">
+          <label for="max_x">max_x</label>
+          <input type="text" id="max_x" placeholder="example: 1.5" required/>
+        </div>
+        <div class="input_text">
+          <label for="min_y">min_y</label>
+          <input type="text" id="min_y" placeholder="example: -1.5" required/>
+        </div>
+        <div class="input_text">
+          <label for="max_y">max_y</label>
+          <input type="text" id="max_y" placeholder="example: 1.5" required/>
+        </div>
+        <div class="input_text">
+        <label for="comp_const">comp_const</label>
+        <input type="text" id="comp_const" placeholder="example: -0.8+0.15j"  required/>
+        </div>
+        <button onclick="startAPI()">描画</button>
+      </div>
+      <div id="loader" class="loader"></div>
+  </div>
+    
+    <div>
+      <!-- サイズを10%で表示する -->
+      <p id="err_msg"></p>
+      <img src="" id="img" alt="" width="50%" />
+      <p id="result"></p>
+    </div>
+    <!-- jsファイルを読みこむ -->
+    <script src="{% static 'js/julia_API.js' %}"></script>
+  </body>
+</html>
