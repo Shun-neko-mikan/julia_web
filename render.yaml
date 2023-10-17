@@ -14,7 +14,7 @@ services:
     branch: main
     healthCheckPath: /
     buildCommand: "./build.sh"
-    startCommand: "gunicorn ./satori/satori.wsgi:application"
+    startCommand: "gunicorn ./satori/satori/satori.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:

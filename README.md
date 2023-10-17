@@ -15,7 +15,7 @@
       - [check\_input(req\_val)](#check_inputreq_val)
       - [julia(z\_real, z\_img, n\_max, a, b)](#juliaz_real-z_img-n_max-a-b)
       - [create\_graph(result, min\_x, max\_x, min\_y, max\_y)](#create_graphresult-min_x-max_x-min_y-max_y)
-    - [Javascript関数説明](#javascript関数説明)
+    - [JavaScript関数説明](#javascript関数説明)
       - [startAPI()](#startapi)
 
 
@@ -79,7 +79,7 @@ HTML上では、
 |OS|Windows|
 |サーバサイド言語|Python3.9|
 |サーバサイドフレームワーク|Django|
-|フロントエンド|Javascript|
+|フロントエンド|JavaScript|
 
 
 ## 使用モジュール
@@ -167,9 +167,9 @@ create_graph関数は、ジュリア集合を描画しそのバイナリデー�
 * 画像を削除
 * バイナリデータを返す
 
-### Javascript関数説明
+### JavaScript関数説明
 #### startAPI()
-startAPI関数は、ジュリア集合を生成、描画するAPIを叩き返ってきた値を表示する関数です。<br>
+startAPI関数は、ジュリア集合を生成、描画するAPIをたたき返ってきた値を表示する関数です。<br>
 関数の流れは以下の通りです。
 * HTMLのinputタグに入力されている値を取得
 * 実行中を知らせるためのローダーの表示をONにする
